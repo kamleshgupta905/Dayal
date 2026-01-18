@@ -44,8 +44,8 @@
 
                     <div class="col-md-8 col-sm-7 text-align-right">
                          <span class="phone-icon"><i class="fa fa-phone"></i> 8439937926</span>
-                         <span class="date-icon"><i class="fa fa-calendar-plus-o"></i> 6:00 AM - 10:00 PM
-                              (Mon-Fri)</span>
+                         <span class="date-icon"><i class="fa fa-calendar-plus-o"></i> OPD: 9:00 AM - 5:00 PM |
+                              Emergency: 24/7</span>
                          <span class="email-icon"><i class="fa fa-envelope-o"></i> <a
                                    href="mailto:info@dayalhospital.com">info@dayalhospital.com</a></span>
                     </div>
@@ -414,7 +414,13 @@
 
                     <div class="col-md-6 col-sm-6">
                          <!-- CONTACT FORM HERE -->
-                         <form id="appointment-form" role="form" method="post" action="#">
+                         <form id="appointment-form" role="form" method="POST"
+                              action="https://formsubmit.co/ajax/kamleshg9569@gmail.com">
+
+                              <!-- Disable Captcha for easier testing -->
+                              <input type="hidden" name="_captcha" value="false">
+                              <!-- ensure JSON response -->
+                              <input type="hidden" name="_template" value="table">
 
                               <!-- SECTION TITLE -->
                               <div class="section-title wow fadeInUp" data-wow-delay="0.4s">
@@ -425,27 +431,27 @@
                                    <div class="col-md-6 col-sm-6">
                                         <label for="name">Name</label>
                                         <input type="text" class="form-control" id="name" name="name"
-                                             placeholder="Full Name">
+                                             placeholder="Full Name" required>
                                    </div>
 
                                    <div class="col-md-6 col-sm-6">
                                         <label for="email">Email</label>
                                         <input type="email" class="form-control" id="email" name="email"
-                                             placeholder="Your Email">
+                                             placeholder="Your Email" required>
                                    </div>
 
                                    <div class="col-md-6 col-sm-6">
                                         <label for="date">Select Date</label>
-                                        <input type="date" name="date" value="" class="form-control">
+                                        <input type="date" name="date" value="" class="form-control" required>
                                    </div>
 
                                    <div class="col-md-6 col-sm-6">
                                         <label for="select">Select Department</label>
-                                        <select class="form-control">
-                                             <option>General Health</option>
-                                             <option>Cardiology</option>
-                                             <option>Gynecology</option>
-                                             <option>Diagnostic Services</option>
+                                        <select class="form-control" name="department">
+                                             <option value="General Health">General Health</option>
+                                             <option value="Cardiology">Cardiology</option>
+                                             <option value="Gynecology">Gynecology</option>
+                                             <option value="Diagnostic Services">Diagnostic Services</option>
                                         </select>
                                    </div>
 
@@ -459,6 +465,12 @@
                                         <button type="submit" class="form-control" id="cf-submit" name="submit">Submit
                                              Request</button>
                                    </div>
+                              </div>
+                              <div id="form-success"
+                                   style="display:none; margin-top:20px; padding:20px; background:#e8f5e9; border:1px solid #4caf50; border-radius:5px; color:#2e7d32; text-align:center;">
+                                   <i class="fa fa-check-circle" style="font-size:24px; margin-bottom:10px;"></i>
+                                   <h4 style="margin:0;">Request Sent Successfully!</h4>
+                                   <p style="margin:5px 0 0;">We will contact you shortly.</p>
                               </div>
                          </form>
                     </div>
@@ -572,10 +584,10 @@
                               <div
                                    style="margin-top: 20px; background: rgba(255,255,255,0.05); padding: 15px; border-radius: 8px;">
                                    <h5 style="color: #fff; margin-bottom: 10px; font-size: 14px;">Opening Hours</h5>
-                                   <p style="color: #ccc; font-size: 13px; margin: 0;">Mon - Sat: 06:00 AM - 10:00 PM
-                                   </p>
-                                   <p style="color: #a5c422; font-size: 13px; font-weight: bold; margin-top: 5px;">Sun:
-                                        24 Hours Emergency</p>
+                                   <p style="color: #ccc; font-size: 13px; margin: 0;">OPD Time: 09:00 AM - 05:00 PM
+                                        (Mon-Sat)</p>
+                                   <p style="color: #a5c422; font-size: 13px; font-weight: bold; margin-top: 5px;">
+                                        Emergency: 24 Hours</p>
                               </div>
                          </div>
                     </div>
