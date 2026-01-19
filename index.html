@@ -67,9 +67,14 @@
                     </button>
 
                     <!-- lOGO TEXT HERE -->
-                    <a href="index.html" class="navbar-brand" style="display: flex; align-items: center;"><img
-                              src="images/dh-logo.png" alt="Dayal Hospital Logo"
-                              style="height: 50px; margin-right: 10px;"> <span>Dayal Hospital</span></a>
+                    <a href="index.html" class="navbar-brand" style="display: flex; align-items: center;">
+                         <div
+                              style="width: 50px; height: 50px; border-radius: 50%; overflow: hidden; margin-right: 10px; border: 2px solid #a5c422;">
+                              <img src="images/dh-logo.png" alt="Dayal Hospital Logo"
+                                   style="width: 100%; height: 100%; object-fit: cover; transform: scale(1.6);">
+                         </div>
+                         <span>Dayal Hospital</span>
+                    </a>
                </div>
 
                <!-- MENU LINKS -->
@@ -480,6 +485,20 @@
      </section>
 
 
+     <!-- GOOGLE MAP -->
+     <section id="google-map">
+          <!-- How to change your own map point
+            1. Go to Google Maps
+            2. Click on your location point
+            3. Click "Share" and choose "Embed map" tab
+            4. Copy only URL and paste it within the src="" field below
+    -->
+          <iframe
+               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d113426.19561008602!2d79.0200676!3d27.2292359!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3975ec2085e33d25%3A0x705664161988941!2sMainpuri%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1710834000000!5m2!1sen!2sin"
+               width="100%" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+     </section>
+
+
      <!-- FOOTER -->
      <footer data-stellar-background-ratio="5"
           style="background: #1a1a1a; color: #fff; padding-top: 80px; padding-bottom: 20px;">
@@ -489,8 +508,11 @@
                     <div class="col-md-4 col-sm-6">
                          <div class="footer-thumb">
                               <div style="display: flex; align-items: center; margin-bottom: 20px;">
-                                   <img src="images/dh-logo.png" alt="Dayal Hospital Logo"
-                                        style="height: 60px; margin-right: 15px;">
+                                   <div
+                                        style="width: 60px; height: 60px; border-radius: 50%; overflow: hidden; margin-right: 15px; border: 2px solid #a5c422;">
+                                        <img src="images/dh-logo.png" alt="Dayal Hospital Logo"
+                                             style="width: 100%; height: 100%; object-fit: cover; transform: scale(1.6);">
+                                   </div>
                                    <h3 style="color: #fff; margin: 0; font-size: 24px; font-weight: 700;">Dayal Hospital
                                    </h3>
                               </div>
@@ -498,7 +520,9 @@
                                    to excellence in healthcare, providing compassionate patient care and advanced
                                    medical treatment with a personal touch.</p>
                               <div class="social-icon">
-                                   <li style="margin-right: 10px;"><a href="#" class="fa fa-facebook-square"
+                                   <li style="margin-right: 10px;"><a
+                                             href="https://www.facebook.com/profile.php?id=61567382665948&mibextid=rS40aB7S9Ucbxw6v"
+                                             target="_blank" class="fa fa-facebook-square"
                                              style="background: #3b5998; color: #fff; width: 40px; height: 40px; line-height: 40px; border-radius: 50%; font-size: 18px;"></a>
                                    </li>
                                    <li style="margin-right: 10px;"><a
@@ -506,8 +530,12 @@
                                              target="_blank" class="fa fa-instagram"
                                              style="background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); color: #fff; width: 40px; height: 40px; line-height: 40px; border-radius: 50%; font-size: 18px;"></a>
                                    </li>
-                                   <li><a href="#" class="fa fa-twitter"
+                                   <li style="margin-right: 10px;"><a href="#" class="fa fa-twitter"
                                              style="background: #1da1f2; color: #fff; width: 40px; height: 40px; line-height: 40px; border-radius: 50%; font-size: 18px;"></a>
+                                   </li>
+                                   <li><a href="https://www.google.com/search?client=mobilesearchapp&sca_esv=16ad4a352966a747&bih=797&biw=390&channel=iss&cs=1&hl=en_GB&rlz=1MDAPLA_en-GBIN1043IN1043&v=403.0.853868894&sxsrf=ANbL-n6Pw-yFYEOq4FjvzBuV9Y7W2A7gFw%3A1768656784230&kgmid=%2Fg%2F11vzbm30_c&q=Dayal%20Hospltal&shem=bdsle%2Cptotple&shndl=30&source=sh%2Fx%2Floc%2Fact%2Fm1%2F5&kgs=c020bd4bb0c648a6"
+                                             target="_blank" class="fa fa-google"
+                                             style="background: #db4a39; color: #fff; width: 40px; height: 40px; line-height: 40px; border-radius: 50%; font-size: 18px;"></a>
                                    </li>
                               </div>
                          </div>
@@ -578,7 +606,7 @@
                                    <p style="color: #ccc; display: flex; align-items: flex-start;"><i
                                              class="fa fa-map-marker"
                                              style="background: #a5c422; color: #fff; width: 30px; height: 30px; line-height: 30px; text-align: center; border-radius: 50%; margin-right: 10px; font-size: 14px; flex-shrink: 0;"></i>
-                                        <span>Main Road, Near Railway Station, Your City, India</span>
+                                        <span>Main Road, Near Railway Station, Mainpuri, Uttar Pradesh, India</span>
                                    </p>
                               </div>
                               <div
